@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="کنترل موجودی ۱">
+<title>کنترل موجودی ۱</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+<div id="gate" class="gate">
+  <div class="gate-box">
+    <div class="gate-mark">🔐</div>
+    <div class="eyebrow">دسترسی به درس</div>
+    <h1>کنترل موجودی ۱</h1>
+    <p>برای ورود به محتوای این درس، رمز عبور را وارد کنید.</p>
+    <form id="loginForm">
+      <label for="password">رمز عبور</label>
+      <div class="password-field">
+        <input id="password" type="password" autocomplete="current-password" placeholder="رمز عبور درس">
+        <button id="togglePassword" type="button" aria-label="نمایش رمز">◉</button>
+      </div>
+      <button class="primary-btn" type="submit">ورود به درس <span>←</span></button>
+      <div id="loginError" class="login-error" hidden>رمز عبور صحیح نیست.</div>
+    </form>
+    <a class="back-under" href="../../">← بازگشت به انتخاب درس</a>
+  </div>
+</div>
+
+<div id="content" hidden>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="../../"><span class="brand-logo">D</span><span>سامانه محتوای دروس</span></a>
+    <button id="logout" class="logout">خروج از درس</button>
+  </div>
+</header>
+
+<section class="course-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="../../">دروس</a><span>/</span>کنترل موجودی ۱</div>
+    <div class="course-heading">
+      <div>
+        <div class="eyebrow">مهندسی صنایع</div>
+        <h1>کنترل موجودی ۱</h1>
+        <p>منابع آموزشی درس، جلسه‌به‌جلسه</p>
+      </div>
+      <div class="course-logo">م</div>
+    </div>
+    <div class="stats">
+      <div><strong>۱۲</strong><span>جلسه</span></div>
+      <div><strong>۱۲</strong><span>جزوه</span></div>
+      <div><strong>۱۲</strong><span>ویدئو</span></div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap lesson-area">
+  <div class="toolbar">
+    <div><span class="section-label">محتوای درس</span><h2>جلسات آموزشی</h2></div>
+    <label class="search"><span>⌕</span><input id="search" type="search" placeholder="جست‌وجوی جلسه یا کلیدواژه"></label>
+  </div>
+  <div id="lessons"></div>
+  <div id="empty" class="empty" hidden>موردی پیدا نشد.</div>
+</main>
+<footer><div class="wrap">کنترل موجودی ۱</div></footer>
+</div>
+<script src="../../assets/js/course.js"></script>
+</body>
+</html>
