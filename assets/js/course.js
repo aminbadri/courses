@@ -5,7 +5,7 @@
    3) keywords را پس از بررسی PDFها تکمیل/اصلاح کنید.
    ========================================================= */
 
-const PASSWORD = "CHANGE-ME-1234"; // <-- رمز ورود همین درس
+const PASSWORD = "1234"; // <-- رمز ورود همین درس
 
 const lessons = [
   {id:1, title:"جلسه اول", topic:"عنوان واقعی جلسه", keywords:["کلیدواژه ۱","کلیدواژه ۲","کلیدواژه ۳"], pdf:"PDF_LINK_SESSION_01", video:"APARAT_LINK_SESSION_01"},
